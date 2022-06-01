@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    margin: 5px 5px 5px 5px;
+}
+
+.menuIcon {
+    font-size: 20px;
+    background: none;
+}
+
+.middle{
+    padding-top: 5px;
+}
+
+.middleText {
+    color: #6f6f6f;
+    font-family: Georgia, serif;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+}
+
+.brackets {
+    padding: 5px 5px 5px 5px;
+}
+
+.bracketsIcon {
+    font-size: 20px;
+}
+
+.bracketsIcon {
+}
+
+.nameOfUser {
+    padding: 5px 5px 5px 5px;
+}
+
+.nameOfUserText {
+    color: #6f6f6f;
+    font-family: Georgia, serif;
+}
+
+.logout {
+    padding: 5px 5px 5px 5px;
+}
+
+.logoutIcon {
+    font-size: 20px;
+    color: #6d6d6d;
+}

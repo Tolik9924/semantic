@@ -1,0 +1,43 @@
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px 5px 5px;
+    height: 40px;
+    border-radius: 5px 5px 0px 0px;
+    background: #fcfcfc;
+}
+
+.customer {
+    display: flex;
+    flex-direction: row;
+}
+
+.customerIconContainer {
+    justify-content: center;
+    align-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.customerIcon {
+    color: #67b05e;
+    font-size: 23px;
+}
+
+.addCustomer {
+    justify-content: center;
+    align-self: center;
+}
+
+.addCustomerText {
+    color: #67b05e;
+}
+
+.guest {
+    justify-content: center;
+    align-self: center;
+    padding-right: 10px;
+}
+
+.guestText {
+}

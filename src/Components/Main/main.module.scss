@@ -1,0 +1,25 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    width: 60%;
+}
+
+.aside {
+    width: 40%;
+}

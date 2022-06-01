@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin: 10px 10px 0px 10px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.productText {
+    color: #636363;
+}
+
+.totalContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.total {
+    padding: 10px 10px 10px 10px;
+}
+
+.totalText {
+    color: #636363; 
+}
+
+.tree {
+    padding: 10px 10px 10px 10px;
+}
+
+.treeIcon {
+    font-size: 17px;
+}

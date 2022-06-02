@@ -5,6 +5,7 @@ import MenuAndNameOfUser from './Components/MenuAndNameOfUser/MenuAndNameOfUser'
 import Main from './Components/Main/Main';
 import Modal from './Components/Modal/Modal';
 import AddCustomer from './Components/AddCustomer/AddCustomer';
+import Menu from './Components/Menu/Menu';
 
 const App = () =>  {
 
@@ -311,17 +312,26 @@ const App = () =>  {
         },
     ];
 
-    const [selectCustomer, setSelectCustomer] = useState(true);
+    const [selectCustomer, setSelectCustomer] = useState(false);
+    const [selectMenu, setSelectMenu] = useState(true);
 
   return (
     <div className="app">
-      <MenuAndNameOfUser />
+      <MenuAndNameOfUser selectMenu={selectMenu} 
+                         setSelectMenu={setSelectMenu} />
       <Main data={data} 
             selectCustomer={selectCustomer}
             setSelectCustomer={setSelectCustomer} />
       <Modal active={selectCustomer}
              setActive={setSelectCustomer}>
-          <AddCustomer />
+          <AddCustomer selectCustomer={selectCustomer} 
+                       setSelectCustomer={setSelectCustomer} />
+      </Modal>
+      <Modal active={selectMenu}
+             setActive={setSelectMenu}
+             theme='menu'
+             themeContent='menuContent'>
+                 <Menu />
       </Modal>
     </div>
   )

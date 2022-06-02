@@ -7,20 +7,25 @@ import Button from '../Button/Button';
 
 import style from './menuAndNameOfUser.module.scss';
 
-const MenuAndNameOfUser = () => {
-    
-    return(
+const MenuAndNameOfUser = ({
+    selectMenu,
+    setSelectMenu
+}) => {
+
+    return (
         <div className={style.container}>
             <div className={style.left}>
-                <Button>
-                    <AiOutlineMenu className={style.menuIcon} />
+                <Button onClick={() => setSelectMenu(!selectMenu)}>
+                    {selectMenu ?
+                        <span className={style.close}> X </span> :
+                        <AiOutlineMenu className={style.menuIcon} />}
                 </Button>
             </div>
 
             <div class={style.middle}>
                 <span className={style.middleText}>QA POS</span>
             </div>
-            
+
             <div className={style.right}>
                 <div className={style.brackets}>
                     <DiBrackets className={style.bracketsIcon} />

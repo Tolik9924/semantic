@@ -3,3 +3,95 @@
      width: 800px;
      height: 600px;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.selectCustomer {
+    color: #808080;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.right {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.close {
+    color: #646464;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.firstButton {
+    margin: 0px 10px 0px 10px;
+    height: 100%;
+}
+
+.addNewCustomer {
+}
+
+.addNewCustomerText {
+    color: #fff;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.people {
+    color: #fff;
+    font-size: 20px;
+}
+
+.secondButton {
+    margin: 10px 10px 0px 10px;
+}
+
+.view {
+    font-size: 20px;
+    color: #fff;
+}
+
+.viewCustomers {
+    color: #fff;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.input {
+    width: 96.5%;
+    height: 50px;
+    margin: 10px 10px 0px 10px;
+}
+
+.pleaseEnterMoreCharactersContainer {
+    width: 97.5%;
+    height: 350px;
+    border: 1px solid #808080;
+    margin: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pleaseEnterMoreCharacters {
+    color: #111111;
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: 600;
+}

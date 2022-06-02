@@ -6,14 +6,16 @@ import style from './modal.module.scss';
 const Modal = ({
     active,
     setActive,
-    children
+    children,
+    theme='primary',
+    themeContent='primaryContent'
 }) => {
 
     const modeModal = active && style.active;
     const modeContent = active && style.activeContent;
 
-    const classModal = classNames(style.modal, modeModal);
-    const classContent = classNames(style.modalContent, modeContent);
+    const classModal = classNames(style.modal, modeModal, style[theme]);
+    const classContent = classNames(style.modalContent, modeContent, style[themeContent]);
 
     return(
         <div className={classModal} onClick={() => setActive(false)}>

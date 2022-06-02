@@ -16,8 +16,10 @@ const Input = ({
     theme = 'primary'
 }) => {
 
+    const classInput = classNames(style.input, style[theme]);
+
     return(
-        <input  className={style.input} 
+        <input  className={classInput} 
                 placeholder={placeholder}
                 type={type}
                 name={name}

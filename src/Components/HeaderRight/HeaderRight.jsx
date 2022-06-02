@@ -3,8 +3,12 @@ import React from 'react';
 import style from './headerRight.module.scss';
 
 import { BsPeopleFill } from 'react-icons/bs';
+import Button from '../Button/Button';
 
-const HeaderRight = () => {
+const HeaderRight = ({
+    selectCustomer,
+    setSelectCustomer
+}) => {
     return (
         <header className={style.headerRight}>
            <div className={style.customer}>
@@ -12,7 +16,9 @@ const HeaderRight = () => {
                     <BsPeopleFill className={style.customerIcon} />
                </div>
                 <div className={style.addCustomer}>
-                    <span className={style.addCustomerText}>Add Customer</span>
+                    <Button onClick={() => setSelectCustomer(!selectCustomer)}>
+                        <span className={style.addCustomerText}>Add Customer</span>
+                    </Button>
                 </div>
            </div>
            <div className={style.guest}>

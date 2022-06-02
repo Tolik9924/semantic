@@ -1,8 +1,10 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 
 import MenuAndNameOfUser from './Components/MenuAndNameOfUser/MenuAndNameOfUser';
 import Main from './Components/Main/Main';
+import Modal from './Components/Modal/Modal';
+import AddCustomer from './Components/AddCustomer/AddCustomer';
 
 const App = () =>  {
 
@@ -309,10 +311,18 @@ const App = () =>  {
         },
     ];
 
+    const [selectCustomer, setSelectCustomer] = useState(true);
+
   return (
     <div className="app">
       <MenuAndNameOfUser />
-      <Main data={data} />
+      <Main data={data} 
+            selectCustomer={selectCustomer}
+            setSelectCustomer={setSelectCustomer} />
+      <Modal active={selectCustomer}
+             setActive={setSelectCustomer}>
+          <AddCustomer />
+      </Modal>
     </div>
   )
 }

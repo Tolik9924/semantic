@@ -8,7 +8,9 @@ import HeaderRight from '../HeaderRight/HeaderRight';
 import style from './main.module.scss';
 
 const Main = ({
-    data
+    data,
+    selectCustomer,
+    setSelectCustomer
 }) => {
     return (
         <div className={style.container}>
@@ -17,7 +19,8 @@ const Main = ({
                     <HeaderLeft />
                 </div>
                 <div className={style.right}>
-                    <HeaderRight />
+                    <HeaderRight selectCustomer={selectCustomer}
+                                 setSelectCustomer={setSelectCustomer}/>
                 </div>
             </header>
             <div className={style.bodyContainer}>

@@ -313,7 +313,7 @@ const App = () =>  {
     ];
 
     const [selectCustomer, setSelectCustomer] = useState(false);
-    const [selectMenu, setSelectMenu] = useState(true);
+    const [selectMenu, setSelectMenu] = useState(false);
 
   return (
     <div className="app">
